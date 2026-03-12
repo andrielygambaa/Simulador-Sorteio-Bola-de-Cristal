@@ -1,0 +1,107 @@
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(160deg,#0b0033,#14004a,#1e0070);
+font-family:Poppins;
+color:white;
+}
+
+.container{
+text-align:center;
+}
+
+.titulo{
+font-family:"Imperial Script";
+font-size:80px;
+color:#cfa7ff;
+margin-bottom:20px;
+}
+
+.bola-container{
+display:flex;
+justify-content:center;
+margin-bottom:30px;
+}
+
+.bola{
+width:260px;
+height:260px;
+border-radius:50%;
+background:radial-gradient(circle at 30% 30%, #e879f9, #7e22ce, #1e1b4b);
+box-shadow:
+0 0 60px #9333ea,
+inset 0 0 50px rgba(255,255,255,0.2);
+display:flex;
+align-items:center;
+justify-content:center;
+animation:flutuar 4s infinite ease-in-out;
+}
+
+.estrela{
+width:120px;
+height:120px;
+background:radial-gradient(circle,#ffffff,#9333ea00);
+border-radius:50%;
+filter:blur(8px);
+}
+
+@keyframes flutuar{
+0%{transform:translateY(0px)}
+50%{transform:translateY(-12px)}
+100%{transform:translateY(0px)}
+}
+
+.painel{
+display:flex;
+flex-direction:column;
+gap:15px;
+align-items:center;
+font-family:Montserrat;
+}
+
+label{
+font-size:18px;
+color:#c4b5fd;
+}
+
+input{
+padding:10px;
+width:120px;
+border-radius:10px;
+border:none;
+text-align:center;
+font-size:18px;
+font-family:Poppins;
+background:#1e1b4b;
+color:white;
+box-shadow:0 0 10px #7c3aed;
+}
+
+button{
+padding:12px 30px;
+border:none;
+border-radius:25px;
+font-size:16px;
+cursor:pointer;
+font-family:Raleway;
+background:linear-gradient(45deg,#9333ea,#3b82f6);
+color:white;
+box-shadow:0 0 20px #7c3aed;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+box-shadow:0 0 40px #9333ea;
+}
+
+.resultado{
+margin-top:30px;
+font-size:22px;
+font-family:Montserrat;
+color:#ddd6fe;
+text-shadow:0 0 10px #7c3aed;
+}
